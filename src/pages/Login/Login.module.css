@@ -1,0 +1,35 @@
+.form {
+  width: min(90%, 500px);
+  padding: 20px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.text {
+  margin-top: 30px;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+}
+
+.orange {
+  text-align: center;
+}
+
+.orange a {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.error {
+  background: #ffc529;
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}

@@ -1,0 +1,40 @@
+.name {
+  font-weight: 700;
+  font-size: 20px;
+  color: #000;
+}
+
+.email {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text-gray);
+}
+
+.img {
+  padding: 5px 4px 5px 5px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.header {
+  flex: 0 0 20%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  height: 100%;
+  border-right: 1px solid var(--text-gray);
+}
+
+.nav {
+  flex: 1 1 auto;
+}
+
+.logoutButton {
+  flex: 0 0 auto;
+  margin-bottom: 30px;
+}

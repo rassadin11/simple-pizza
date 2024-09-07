@@ -1,0 +1,160 @@
+.flex {
+  display: flex;
+
+  @media (max-width: 992px) {
+    display: block;
+  }
+}
+
+.flex > *:first-child {
+  flex: 0 0 18%;
+  height: 100vh;
+  min-width: 200px;
+
+  @media (max-width: 992px) {
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: auto;
+  }
+
+  @media (max-width: 450px) {
+    flex-direction: column;
+  }
+}
+
+.list {
+  padding: 0;
+
+  @media (max-width: 992px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & li {
+      list-style-type: none;
+      margin-bottom: 0!important;
+      margin-right: 15px;
+
+      & img {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    justify-content: flex-end;
+  }
+}
+
+.list a {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.list li:not(:last-child) {
+  margin-bottom: 34px;
+}
+
+.list a {
+  text-decoration: none;
+  color: inherit;
+  flex: 0 0 80%;
+  transition: all 0.3s ease;
+}
+
+.list li:hover a {
+  color: var(--primary-color);
+}
+
+.list .active {
+  color: var(--primary-color);
+}
+
+.list img {
+  flex: 0 0 10%;
+  margin-right: 10px;
+  width: 18px;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 20px;
+  color: #000;
+}
+
+.email {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text-gray);
+}
+
+.img {
+  padding: 5px 4px 5px 5px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.info {
+  flex: 0 0 20%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  height: 100%;
+  border-right: 1px solid var(--text-gray);
+  position: sticky;
+  top: 0;
+
+  @media (max-width: 992px) {
+    position: static;
+  }
+}
+
+.nav {
+  flex: 1 1 auto;
+}
+
+.logoutButton {
+  flex: 0 0 auto;
+  margin-bottom: 30px;
+
+  @media (max-width: 992px) {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 600px) {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1000;
+  }
+}
+
+.outlet {
+  flex: 1 1 auto;
+  padding: 20px;
+
+  @media (max-width: 992px) {
+    padding-top: 0;
+  }
+}
+
+.itemCount {
+  margin-left: 10px;
+  padding: 5px;
+  background: var(--primary-color);
+  color: #fff;
+  border-radius: 10px;
+}
+
+.profile {
+  @media (max-width: 600px) {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
